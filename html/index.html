@@ -30,7 +30,7 @@
     </header>
 
 <!--    Home page-->
-    <div>
+    <section>
         <img src="../assets/images/myPic1.png" alt="Home Pic " width="300px">
 
         <div>
@@ -44,10 +44,10 @@
             <h4>Download CV</h4>
 <!--            <a href="pdf path" download>Download CV</a>-->
         </div>
-    </div>
+    </section>
 
 <!--    About me-->
-    <div>
+    <section>
         <div>
             <h3 id="aboutid">About Me</h3>
             <p>
@@ -69,15 +69,15 @@
         <br>
 
         <img src="../assets/images/myPic2.jpeg" alt="About Pic " width="200px">
-    </div>
+    </section>
 
 <!--    Skills-->
-    <div>
+    <section>
         <h3 id="skillid">Skills</h3>
-    </div>
+    </section>
 
 <!--Service-->
-    <div>
+    <section>
         <h3 id="serviceid">My Service</h3>
 
         <div>
@@ -109,10 +109,10 @@
                 usability and accessibility of web applications.
             </p>
         </div>
-    </div>
+    </section>
 
 <!--    Project-->
-    <div>
+    <section>
         <h3 id="projectid">My Project</h3>
 
         <div>
@@ -124,10 +124,10 @@
             <h4>Dreamland Kids</h4>
             <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="200px">
         </div>
-    </div>
+    </section>
 
 <!--Works-->
-    <div>
+    <section>
         <h3 id="workid">My Works</h3>
 
         <div>
@@ -137,10 +137,10 @@
         </div>
 
 
-    </div>
+    </section>
 
 <!--Contact-->
-    <div>
+    <section>
         <h3 id="contactid">Contact Details</h3>
 
         <div>
@@ -150,56 +150,58 @@
         </div>
 
         <img src="../assets/images/myPic3.png" alt="contact pic" width="200px">
-    </div>
+    </section>
 
 <!--Form-->
-<form>
-    <fieldset>
-        <legend>Form</legend>
-        <div>
+<section>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
             <div>
-                <label for="first-name">First Name : </label>
-                <input type="text"
-                       id="first-name"
-                       name="firstname">
+                <div>
+                    <label for="first-name">First Name : </label>
+                    <input type="text"
+                           id="first-name"
+                           name="firstname">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="last-name">Last Name : </label>
+                    <input type="text"
+                           id="last-name"
+                           name="lastname">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="subject">Subject : </label>
+                    <input type="text"
+                           id="subject"
+                           name="subject">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea
+                            id="message"
+                            rows="10"
+                            cols="50"
+                            name="message"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Submit</button>
             </div>
-
-            <br>
-
-            <div>
-                <label for="last-name">Last Name : </label>
-                <input type="text"
-                       id="last-name"
-                       name="lastname">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="subject">Subject : </label>
-                <input type="text"
-                       id="subject"
-                       name="subject">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="message">Message</label><br>
-                <textarea
-                        id="message"
-                        rows="10"
-                        cols="50"
-                        name="message"
-                ></textarea>
-            </div>
-
-            <br>
-
-            <button type="submit">Submit</button>
-        </div>
-    </fieldset>
-</form>
+        </fieldset>
+    </form>
+</section>
 
 <!--Add details-->
     <footer>
@@ -210,7 +212,6 @@
             <dd>sithusilva94@gmail.com</dd>
         </dl>
     </footer>
-
 
 </body>
 </html>
