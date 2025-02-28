@@ -13,10 +13,42 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="refresh">
 
+    <style>
+
+        body{
+            background-color: #1A120B;
+        }
+        header{
+            color: #E5E5CB;
+        }
+        #homeid{
+            color: white;
+        }
+        /*#homename{*/
+        /*    color: #F4D793;*/
+        /*}*/
+        body>section>div>p{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+        #aboutme,#service,#homename,#project{
+            color: #F4D793;
+        }
+        hr{
+            color: #F4D793;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
 
     <img src="../assets/images/logo.png" alt="portfolio logo" width="30px">
+
 
 <!--Add button-->
     <header>
@@ -35,7 +67,7 @@
 
         <div>
             <h1 id="homeid">Hello, I'm </h1>
-            <h1>Sithumini Chathurya</h1>
+            <h1 id="homename">Sithumini Chathurya</h1>
             <p>
                 I’m software developer.
                 I can help you slove a problem,
@@ -49,7 +81,8 @@
 <!--    About me-->
     <section>
         <div>
-            <h3 id="aboutid">About Me</h3>
+            <h3 id="aboutid">About <span id="aboutme">Me</span> </h3>
+            <hr>
             <p>
                 I’m Sithumini Chathurya De Silva,
                 a dedicated software engineering student currently pursuing
@@ -74,11 +107,13 @@
 <!--    Skills-->
     <section>
         <h3 id="skillid">Skills</h3>
+        <hr>
     </section>
 
 <!--Service-->
     <section>
-        <h3 id="serviceid">My Service</h3>
+        <h3 id="serviceid">My <span id="service">Service</span></h3>
+        <hr>
 
         <div>
             <h4>Web Design</h4>
@@ -113,7 +148,8 @@
 
 <!--    Project-->
     <section>
-        <h3 id="projectid">My Project</h3>
+        <h3 id="projectid">My <span id="project">Project</span></h3>
+        <hr>
 
         <div>
             <h4>Tic Tac Toe Game</h4>
