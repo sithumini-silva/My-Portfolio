@@ -74,6 +74,10 @@
         }
 
         /*About me*/
+        #aboutSec{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
         h3{
             color: white;
         }
@@ -83,6 +87,18 @@
         hr{
             background-color: #F4D793;
             height: 2px;
+        }
+        #aboutpic1{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #aboutpic{
+            border-radius: 10%;
+            box-shadow:5px 5px 8px #D5CEA3;
+            position: relative;
         }
         button{
             color: #3C2A21;
@@ -96,6 +112,10 @@
         }
 
         /*skills*/
+        .skillsection{
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+        }
         .skillsection div{
             width: 100px;
             height: 100px;
@@ -106,8 +126,6 @@
             box-shadow: 4px 2px 4px 4px #FDF5DB;
             outline: 4px solid #3C2A21;
             position: relative;
-            left: 50px;
-            right: 50px;
         }
         .skills img {
             width: 75%;
@@ -189,7 +207,7 @@
     <h3 id="aboutid">About <span id="aboutme">Me</span> </h3>
     <hr>
 </div>
-    <section>
+    <section id="aboutSec">
         <div>
             <p>
                 I’m Sithumini Chathurya De Silva,
@@ -206,17 +224,17 @@
             </p>
             <a href="readmore.html"> <button type="button">Read more</button></a>
         </div>
-        <br>
-
-        <div>
-            <img src="../assets/images/myPic2.jpeg" alt="About Pic " width="200px">
-        </div>
+            <div id="aboutpic1">
+                <img id="aboutpic" src="../assets/images/myPic2.jpeg" alt="About Pic " width="200px">
+            </div>
     </section>
 
 <!--    Skills-->
+<div>
+    <h3 id="skillid">Skills</h3>
+    <hr>
+</div>
     <section class="skillsection">
-        <h3 id="skillid">Skills</h3>
-        <hr>
 
         <div class="skills">
             <img src="../assets/images/icon/java.png" alt="Java">
