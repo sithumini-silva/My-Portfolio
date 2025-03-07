@@ -14,12 +14,40 @@
     <meta http-equiv="refresh">
 
     <style>
-
         body{
             background-color: #1A120B;
         }
-        header{
-            color: #E5E5CB;
+
+        /*Header*/
+        body>header>nav a{
+            color: #F4D793;
+            margin: 0 7px;
+        }
+        body>header{
+            height: 50px;
+            position: relative;
+        }
+        body>header>img{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        #navid{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*Home*/
+        #homeSec{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
         #homeid{
             color: white;
@@ -27,6 +55,25 @@
         body>section>div>p{
             color: white;
         }
+        .homepic1{
+            width: 285px;
+            height: 285px;
+            background: #D5CEA3;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #3C2A21 ;
+            box-shadow:5px 5px 8px #D5CEA3;
+        }
+        .homepic{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 100%;
+        }
+
+        /*About me*/
         h3{
             color: white;
         }
@@ -47,6 +94,8 @@
             border: 2px solid wheat;
             border-radius: 10px;
         }
+
+        /*skills*/
         .skillsection div{
             width: 100px;
             height: 100px;
@@ -71,8 +120,8 @@
             margin: auto;
         }
 
+        /*service*/
         .card {
-            width: 300px;
             background-color: #E5E5CB;
             color: #1A120B;
             border-radius: 10px;
@@ -80,34 +129,47 @@
             padding: 20px;
             text-align: center;
             /*transition: transform 0.3s ease;*/
-            display: inline-block;
         }
 
+        /*Project*/
 
+        /*Works*/
 
+        /*Contact*/
+
+        /*Form*/
+
+        /*footer*/
 
     </style>
 
 </head>
 <body>
 
-    <img src="../assets/images/logo.png" alt="portfolio logo" width="30px">
-
-
 <!--Add button-->
     <header>
-        <a href="#homeid">Home</a>
-        <a href="#aboutid">About</a>
-        <a href="#contactid">Contact</a>
-        <a href="#skillid">Skill</a>
-        <a href="#projectid">Project</a>
-        <a href="#workid">Works</a>
-        <a href="#serviceid">Service</a>
+
+        <img src="../assets/images/logo.png" alt="portfolio logo" width="30px">
+
+        <nav id="navid">
+            <a href="#homeid">Home</a>
+            <a href="#aboutid">About</a>
+            <a href="#contactid">Contact</a>
+            <a href="#skillid">Skill</a>
+            <a href="#projectid">Project</a>
+            <a href="#workid">Works</a>
+            <a href="#serviceid">Service</a>
+        </nav>
+
     </header>
 
 <!--    Home page-->
-    <section>
-        <img src="../assets/images/myPic1.png" alt="Home Pic " width="300px">
+    <section id="homeSec">
+        <div class="homepic1">
+            <div class="homepic">
+                <img src="../assets/images/myPic1.png" alt="Home Pic " width="300px">
+            </div>
+        </div>
 
         <div>
             <h1 id="homeid">Hello, I'm </h1>
@@ -117,16 +179,18 @@
                 I can help you slove a problem,
                 build a product or grow existing project.
             </p>
-            <h4>Download CV</h4>
+            <button type="button">Download CV</button>
 <!--            <a href="pdf path" download>Download CV</a>-->
         </div>
     </section>
 
 <!--    About me-->
+<div>
+    <h3 id="aboutid">About <span id="aboutme">Me</span> </h3>
+    <hr>
+</div>
     <section>
         <div>
-            <h3 id="aboutid">About <span id="aboutme">Me</span> </h3>
-            <hr>
             <p>
                 I’m Sithumini Chathurya De Silva,
                 a dedicated software engineering student currently pursuing
@@ -142,10 +206,11 @@
             </p>
             <a href="readmore.html"> <button type="button">Read more</button></a>
         </div>
-
         <br>
 
-        <img src="../assets/images/myPic2.jpeg" alt="About Pic " width="200px">
+        <div>
+            <img src="../assets/images/myPic2.jpeg" alt="About Pic " width="200px">
+        </div>
     </section>
 
 <!--    Skills-->
@@ -183,7 +248,7 @@
     </section>
 
 <!--Service-->
-    <section>
+    <section id="serviceSection">
         <h3 id="serviceid">My <span id="service">Service</span></h3>
         <hr>
 
