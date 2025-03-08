@@ -167,8 +167,29 @@
             font-size: x-large;
         }
 
-
         /*Project*/
+        #projectSection{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .project{
+            background-color: #3E3232;
+            color: #E5E5CB;
+            border: 3px solid #3C2A21;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow:5px 5px 8px #D5CEA3;
+        }
+        .p1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .p1>div{
+            border: 2px solid wheat;
+        }
+
 
         /*Works*/
 
@@ -327,15 +348,31 @@
     <h3 id="projectid">My <span id="project">Project</span></h3>
     <hr>
 </div>
-    <section>
-        <div>
-            <h4>Tic Tac Toe Game</h4>
-            <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="200px">
+    <section id="projectSection">
+        <div class="project">
+            <div class="p1">
+                <div>
+                    <h4>Tic Tac Toe Game</h4>
+                    <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="200px">
+                </div>
+
+                <div>
+                    <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h4>Dreamland Kids</h4>
-            <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="200px">
+        <div class="project">
+            <div class="p1">
+                <div>
+                    <h4>Dreamland Kids</h4>
+                    <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="200px">
+                </div>
+
+                <div>
+                    <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
+                </div>
+            </div>
         </div>
     </section>
 
