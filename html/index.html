@@ -61,16 +61,15 @@
             background: #D5CEA3;
             border-radius: 50%;
             position: relative;
+            left: 20%;
             overflow: hidden;
             border: 2px solid #3C2A21 ;
             box-shadow:5px 5px 8px #D5CEA3;
         }
         .homepic{
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         /*About me*/
@@ -78,7 +77,7 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
         }
-        h3{
+        h3,h5{
             color: white;
         }
         #aboutme,#service,#homename,#project,#works,#details{
@@ -182,18 +181,47 @@
             text-align: center;
             box-shadow:5px 5px 8px #D5CEA3;
         }
-        .p1{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
+        .pgit{
+            width: 60px;
+            height: 60px;
+            background: #FCFFEE;
+            border-radius: 50%;
+            position: relative;
+            box-shadow:2px 2px 8px #FCFFEE;
         }
-        .p1>div{
-            border: 2px solid wheat;
+        .pgit img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
-
 
         /*Works*/
+        .works{
+            height: 10px;
+            background-color: #E5E5CB;
+            border: 3px solid #3C2A21;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+        }
+        .works h4{
+            position: absolute;
+            top: 13px;
+            left: 10px;
+            bottom: 0;
+            margin: auto;
+            font-size: 20px;
+        }
 
         /*Contact*/
+        #contactSection{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         /*Form*/
 
@@ -350,26 +378,20 @@
 </div>
     <section id="projectSection">
         <div class="project">
-            <div class="p1">
-                <div>
-                    <h4>Tic Tac Toe Game</h4>
-                    <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="200px">
-                </div>
-
-                <div>
+            <div>
+                <h4>Tic Tac Toe Game</h4>
+                <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="150px" height="150px">
+                <div class="pgit">
                     <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
                 </div>
             </div>
         </div>
 
         <div class="project">
-            <div class="p1">
-                <div>
-                    <h4>Dreamland Kids</h4>
-                    <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="200px">
-                </div>
-
-                <div>
+            <div>
+                <h4>Dreamland Kids</h4>
+                <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="150px" height="150px">
+                <div class="pgit">
                     <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
                 </div>
             </div>
@@ -382,26 +404,35 @@
         <hr>
 
         <div>
-            <h4>Assignment 1</h4>
-            <h4>Assignment 2</h4>
-            <h4>Assignment 3</h4>
+            <div class="works">
+                <h4>Assignment 1</h4>
+            </div>
+            <div class="works">
+                <h4>Assignment 2</h4>
+            </div>
+            <div class="works">
+                <h4>Assignment 3</h4>
+            </div>
         </div>
 
 
     </section>
 
 <!--Contact-->
-    <section>
-        <h3 id="contactid">Contact <span id="details">Details</span></h3>
-        <hr>
-
+<div>
+    <h3 id="contactid">Contact <span id="details">Details</span></h3>
+    <hr>
+</div>
+    <section id="contactSection">
         <div>
             <h5>+94 78 117 4606</h5>
             <h5>sithusilva94@gmail.com</h5>
             <h5>Sri Lanka, Western <br> Province,Kalutara</h5>
         </div>
-
-        <img src="../assets/images/myPic3.png" alt="contact pic" width="200px">
+        <div>
+            <div></div>
+            <img src="../assets/images/myPic3.png" alt="contact pic" width="200px">
+        </div>
     </section>
 
 <!--Form-->
