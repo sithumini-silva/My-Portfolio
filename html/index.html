@@ -178,7 +178,7 @@
         /*Project*/
         #projectSection{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
         }
         .project{
             background-color: #3E3232;
@@ -190,21 +190,12 @@
             text-align: center;
             box-shadow:5px 5px 8px #D5CEA3;
         }
-        .pgit{
-            width: 60px;
-            height: 60px;
-            background: #FCFFEE;
-            border-radius: 50%;
-            position: relative;
-            box-shadow:2px 2px 8px #FCFFEE;
-        }
-        .pgit img{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
+        #p1,#p2,#p3{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
         }
 
         /*Works*/
@@ -447,20 +438,44 @@
         <div class="project">
             <div>
                 <h4>Tic Tac Toe Game</h4>
-                <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="150px" height="150px">
-                <div class="pgit">
-                    <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
+                <div id="p1">
+                    <div>
+                        <img src="../assets/images/tictactoe.png" alt="Tic Tac Toe" width="200px" height="150px">
+                    </div>
+                    <div>
+                        <img src="../assets/images/icon/github.png" alt="Tic Tac Toe" width="75px">
+                    </div>
                 </div>
+
             </div>
         </div>
 
         <div class="project">
             <div>
                 <h4>Dreamland Kids</h4>
-                <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="150px" height="150px">
-                <div class="pgit">
-                    <img src="../assets/images/icon/git.png" alt="Git Hub" width="50px">
+                <div id="p2">
+                    <div>
+                        <img src="../assets/images/kids.jpg" alt="Dreamland Kids" width="200px" height="150px">
+                    </div>
+                    <div>
+                        <img src="../assets/images/icon/github.png" alt="Git Hub" width="75px">
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div>
+                <h4>Personal Portfolio</h4>
+                <div id="p3">
+                    <div>
+                        <img src="../assets/images/portfolio.jpg" alt="Tic Tac Toe" width="200px" height="150px">
+                    </div>
+                    <div>
+                        <img src="../assets/images/icon/github.png" alt="Tic Tac Toe" width="75px">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
