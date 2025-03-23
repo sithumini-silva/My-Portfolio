@@ -74,6 +74,20 @@ button:hover {
     gap: 25px;
     margin-top: 20px;
 }
+#homeicon a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#homeicon a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.homepic img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.homepic img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
 
 /*About me*/
 #aboutSec{
