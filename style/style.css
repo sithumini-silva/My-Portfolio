@@ -5,6 +5,9 @@ body{
 a{
     text-decoration: none;
 }
+h3{
+    font-size: 25px;
+}
 
 /*Header*/
 body>header>nav a{
@@ -29,6 +32,8 @@ body>header{
     width: 100%;
     background: linear-gradient(to right, #3c3b3f, #605c3c);
     padding: 10px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+
 }
 body>header>img{
     height: fit-content;
@@ -210,6 +215,18 @@ button{
     align-items: center;
     justify-items: center;
     gap: 10px;
+}
+.project>div h4{
+    font-size: 25px;
+    color: white;
+}
+.git:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.git{
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /*Works*/
