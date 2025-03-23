@@ -2,6 +2,9 @@ body{
     background-color: #1A120B;
     padding-top: 60px;
 }
+a{
+    text-decoration: none;
+}
 
 header {
     position: fixed;
@@ -19,7 +22,6 @@ nav {
 }
 nav a {
     color: #F4D793;
-    text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
 }
