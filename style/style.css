@@ -1,15 +1,32 @@
 body{
     background-color: #1A120B;
+    padding-top: 80px;
 }
 
 /*Header*/
 body>header>nav a{
     color: #F4D793;
-    margin: 0 7px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+}
+nav a:hover {
+    background-color: #444;
+    color: #f4f4f4;
 }
 body>header{
-    height: 50px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #3c3b3f, #605c3c);
+    padding: 10px 0;
 }
 body>header>img{
     height: fit-content;
@@ -17,15 +34,7 @@ body>header>img{
     top: 0;
     bottom: 0;
     margin: auto;
-}
-#navid{
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    padding: 10px;
 }
 
 /*Home*/
@@ -44,8 +53,7 @@ body>section>div>p{
 .homepic1{
     width: 285px;
     height: 285px;
-    background: #D5CEA3;
-    border-radius: 50%;
+    background: linear-gradient(90deg, hsla(52, 37%, 74%, 1) 0%, hsla(42, 82%, 77%, 1) 100%);    border-radius: 50%;
     position: relative;
     overflow: hidden;
     border: 2px solid #3C2A21 ;
@@ -57,7 +65,7 @@ body>section>div>p{
     justify-content: center;
 }
 button:hover {
-    background-color: #6C4E31;
+    background: linear-gradient(to right, #ba8b02, #181818);
     color: #FDF5DB;
 }
 #homeicon{
@@ -77,7 +85,7 @@ h3,h5{
     color: #F4D793;
 }
 hr{
-    background-color: #F4D793;
+    background: linear-gradient(to right, #ccccb2, #757519);
     height: 2px;
 }
 #aboutpic1{
@@ -94,12 +102,12 @@ hr{
 }
 button{
     color: #3C2A21;
-    background-color: #F4D793;
+    background: linear-gradient(to right, #ccccb2, #757519);
     font-size: 15px;
     font-weight: bold;
     width: 180px;
     height: 30px;
-    border: 2px solid wheat;
+    border: 2px solid #999966;
     border-radius: 10px;
 }
 
@@ -128,6 +136,9 @@ button{
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.skillsection div:hover{
+    background: linear-gradient(to right, #ede574, #e1f5c4);
 }
 
 /*service*/
@@ -158,6 +169,9 @@ button{
     font-weight: bolder;
     font-size: x-large;
 }
+.card:hover{
+    background: linear-gradient(to right, #f7f8f8, #acbb78);
+}
 
 /*Project*/
 #projectSection{
@@ -165,7 +179,7 @@ button{
     grid-template-columns: repeat(3,1fr);
 }
 .project{
-    background-color: #3E3232;
+    background: linear-gradient(to right, #1e130c, #9a8478);
     color: #E5E5CB;
     border: 3px solid #3C2A21;
     border-radius: 10px;
@@ -174,7 +188,7 @@ button{
     text-align: center;
     box-shadow:5px 5px 8px #D5CEA3;
 }
-#p1,#p2,#p3{
+#p1,#p2,#p3,#w1,#w2,#w3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -183,23 +197,37 @@ button{
 }
 
 /*Works*/
-.works{
-    height: 10px;
-    background-color: #E5E5CB;
-    border: 3px solid #3C2A21;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    position: relative;
+#workSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
 }
-.works h4{
-    position: absolute;
-    top: 13px;
-    left: 10px;
-    bottom: 0;
-    margin: auto;
-    font-size: 20px;
+
+.work-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, hsla(60, 33%, 85%, 1) 0%, hsla(42, 82%, 77%, 1) 100%);
+    border-radius: 20px;
 }
+.work-content h4 {
+    margin: 15px;
+    font-size: 25px
+}
+.icons {
+    display: flex;
+    gap: 10px;
+}
+.icons img {
+    margin-right: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.icons img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 
 /*Contact*/
 #contactSection{
@@ -213,8 +241,7 @@ button{
 #contactpic{
     width: 300px;
     height: 300px;
-    background: #D5CEA3;
-    border-radius: 50%;
+    background: linear-gradient(90deg, hsla(52, 37%, 74%, 1) 0%, hsla(42, 82%, 77%, 1) 100%);    border-radius: 50%;
     position: relative;
     overflow: hidden;
     border: 2px solid #3C2A21 ;
