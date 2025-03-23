@@ -1,0 +1,42 @@
+body{
+    background-color: #1A120B;
+}
+
+body>header>nav a{
+    color: #F4D793;
+    margin: 0 7px;
+}
+h3{
+    color: white;
+}
+#eduid, #exid, #gaid{
+    color: #F4D793;
+}
+hr{
+    background-color: #F4D793;
+    height: 2px;
+}
+em,p{
+    color: white;
+    font-size: x-large;
+}
+.education{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    padding: 20px;
+}
+.education>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:5px 5px 8px #D5CEA3;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.education>div img{
+    box-shadow:5px 3px 8px #FCFFEE;
+    border-radius: 50%;
+}
+
